@@ -1,0 +1,59 @@
+@use "../abstracts/variables.scss" as v;
+@use "../abstracts/mixins.scss" as mx;
+.news-link{
+    @include mx.link;
+    width: max-content;
+}
+.hr{
+    margin-top: 3px;
+    border: 1px solid v.$hr-clr;
+}
+header h1{
+    @include mx.title;
+    font-size: 8rem;
+}
+header h1 span{
+    color: v.$span-clr;
+}
+header p{
+    @include mx.link;
+}
+.details{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+.title h1{
+    @include mx.title;
+    font-size: 7rem;
+}
+.hr2{
+    margin-top: 3px;
+    border: 1px solid #b1b1b1;
+}
+@media screen and (max-width:850px) {
+    header h1{
+        font-size: 6rem;
+    }
+    .title h1{
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width:650px) {
+    header h1{
+        font-size: 4rem;
+    }
+    .title h1{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:450px) {
+    header h1{
+        font-size: 2rem;
+    }
+    .title h1{
+        font-size: 1rem;
+    }
+}
